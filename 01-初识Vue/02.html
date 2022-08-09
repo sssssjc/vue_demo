@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Vue中的数据代理</title>
+    <!-- 引入Vue -->
+    <script type="text/javascript" src="../js/vue.js"></script>
+</head>
+
+<body>
+    <!-- 准备好一个容器-->
+    <div id="root">
+        <h2>学校名称：{{name}}</h2>
+        <h2>学校地址：{{address}}</h2>
+    </div>
+</body>
+
+<script type="text/javascript">
+    // function* func() {
+    //     Vue.config.productionTip = false //阻止 vue 在启动时生成生产提示。
+    //     let data = {
+    //         name: '尚硅谷',
+    //         address: '宏福科技园'
+    //     }
+    //     console.log(data);
+    //     yield '1'
+    //     const vm = new Vue({
+    //         el: '#root',
+    //         data
+    //     })
+    //     yield '2'
+    //     console.log(data);
+    //     yield '3'
+    // }
+
+
+
+    // let iterator = func()
+
+    // iterator.next()
+    // iterator.next()
+    // iterator.next()
+
+    Vue.config.productionTip = false //阻止 vue 在启动时生成生产提示。
+    let data = {
+        name: '尚硅谷',
+        address: '宏福科技园'
+    }
+    console.log(data);
+    debugger;
+
+    const vm = new Vue({
+        el: '#root',
+        data
+    })
+
+    console.log(data);
+
+</script>
+
+</html>
